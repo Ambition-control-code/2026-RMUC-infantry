@@ -1,0 +1,35 @@
+--target=arm-none-eabi
+-DSTM32F407xx
+-DUSE_HAL_DRIVER
+-D__weak=
+-D__packed=
+-D__irq=
+-D__forceinline=
+
+# --- Keil 编译器标准库 (如果是D盘请改D:) ---
+-IC:/Keil_v5/ARM/ARMCC/include
+-IC:/Keil_v5/ARM/ARMCLANG/include
+
+# --- 核心与驱动 (标准 CubeMX 结构) ---
+-ICore/Inc
+-IMDK-ARM
+-IDrivers/STM32F4xx_HAL_Driver/Inc
+-IDrivers/STM32F4xx_HAL_Driver/Inc/Legacy
+-IDrivers/CMSIS/Device/ST/STM32F4xx/Include
+-IDrivers/CMSIS/Include
+
+# --- 您截图中的自定义文件夹 (关键！) ---
+-IBmi088
+-IHardware
+-ITask
+-IDSP
+-Idamiao
+-IApplication/User/Core
+-IApplication/User/USB_DEVICE/App
+-IApplication/User/USB_DEVICE/Target
+
+# --- 中间件 (USB & FreeRTOS) ---
+-IMiddlewares/ST/STM32_USB_Device_Library/Core/Inc
+-IMiddlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc
+-IMiddlewares/Third_Party/FreeRTOS/Source/include
+-IMiddlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F

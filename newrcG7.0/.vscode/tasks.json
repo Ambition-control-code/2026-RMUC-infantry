@@ -1,0 +1,81 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Open Ozone Chassis",
+            "type": "shell",
+            "command": "Start-Process -FilePath 'C:\\Program Files\\SEGGER\\Ozone\\Ozone.exe' -ArgumentList '${workspaceFolder}\\cmake_debug.jdebug' -WorkingDirectory '${workspaceFolder}'",
+            "options": {
+                "cwd": "${workspaceFolder}",
+                "shell": {
+                    "executable": "powershell.exe",
+                    "args": [
+                        "-NoProfile",
+                        "-ExecutionPolicy",
+                        "Bypass",
+                        "-Command"
+                    ]
+                }
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Flash Debug",
+            "type": "shell",
+            "command": "& '${workspaceFolder}\\flash.ps1' -Config Debug",
+            "options": {
+                "cwd": "${workspaceFolder}",
+                "shell": {
+                    "executable": "powershell.exe",
+                    "args": [
+                        "-NoProfile",
+                        "-ExecutionPolicy",
+                        "Bypass",
+                        "-Command"
+                    ]
+                }
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Build and Flash Debug",
+            "type": "shell",
+            "command": "& '${workspaceFolder}\\build_flash.ps1' -Config Debug",
+            "options": {
+                "cwd": "${workspaceFolder}",
+                "shell": {
+                    "executable": "powershell.exe",
+                    "args": [
+                        "-NoProfile",
+                        "-ExecutionPolicy",
+                        "Bypass",
+                        "-Command"
+                    ]
+                }
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Build and Flash Release",
+            "type": "shell",
+            "command": "& '${workspaceFolder}\\build_flash.ps1' -Config Release",
+            "options": {
+                "cwd": "${workspaceFolder}",
+                "shell": {
+                    "executable": "powershell.exe",
+                    "args": [
+                        "-NoProfile",
+                        "-ExecutionPolicy",
+                        "Bypass",
+                        "-Command"
+                    ]
+                }
+            },
+            "problemMatcher": []
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+/* USER CODE BEGIN Header */
+/**
+  ******************************************************************************
+  * @file    can.h
+  * @brief   This file contains all the function prototypes for
+  *          the can.c file
+  ******************************************************************************
+  * @attention
+  *
+  * Copyright (c) 2024 STMicroelectronics.
+  * All rights reserved.
+  *
+  * This software is licensed under terms that can be found in the LICENSE file
+  * in the root directory of this software component.
+  * If no LICENSE file comes with this software, it is provided AS-IS.
+  *
+  ******************************************************************************
+  */
+/* USER CODE END Header */
+/* Define to prevent recursive inclusion -------------------------------------*/
+#ifndef __CAN_H__
+#define __CAN_H__
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+/* Includes ------------------------------------------------------------------*/
+#include "main.h"
+
+/* USER CODE BEGIN Includes */
+#include "can_queue.h"
+/* USER CODE END Includes */
+
+extern CAN_HandleTypeDef hcan1;
+
+extern CAN_HandleTypeDef hcan2;
+
+/* USER CODE BEGIN Private defines */
+
+/* USER CODE END Private defines */
+
+void MX_CAN1_Init(void);
+void MX_CAN2_Init(void);
+
+/* USER CODE BEGIN Prototypes */
+void can_filter_init(void);
+void CAN2_0x200(int16_t i1,int16_t i2,int16_t i3,int16_t i4,uint8_t Len);
+void CAN2_0x1FF(int16_t i1,int16_t i2,int16_t i3,int16_t i4,uint8_t Len);
+void CAN1_0x200(int16_t i1,int16_t i2,int16_t i3,int16_t i4,uint8_t Len);
+void CAN1_0x1FF(int16_t i1,int16_t i2,int16_t i3,int16_t i4,uint8_t Len);
+uint8_t CANx_SendStdData(CAN_HandleTypeDef* hcan,uint16_t ID,uint8_t *pData,uint16_t Len);
+/* USER CODE END Prototypes */
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* __CAN_H__ */
+

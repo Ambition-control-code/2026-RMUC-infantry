@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "../../MDK-ARM"
+		},
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {},
+	"extensions": {
+		"recommendations": [
+			"cl.keil-assistant",
+			"jiyun-tech.keil-vscode"
+		]
+	}
+}

@@ -1,0 +1,60 @@
+
+
+GraphedExpression="55 359", DisplayFormat=DISPLAY_FORMAT_DEC, Color=#e56a6f, Show=0
+GraphedExpression="((All_control).gimbal).yaw_target", Color=#35792b
+GraphedExpression="((vision_recieve_union).receive_vision).yaw", Color=#769dda
+GraphedExpression="((vision_recieve_union).receive_vision).mode", Color=#b14f0d, Show=0
+OpenDocument="rc.c", FilePath="C:/Users/qwz66/Desktop/cmake_sodier - v4.1/newrcG7.0/Hardware/rc.c", Line=220
+OpenDocument="stm32f4xx_ll_usb.c", FilePath="C:/Users/qwz66/Desktop/cmake_sodier - v4.1/newrcG7.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c", Line=995
+OpenDocument="Gimbal_task.c", FilePath="C:/Users/qwz66/Desktop/cmake_sodier - v4.1/newrcG7.0/Task/Gimbal_task.c", Line=117
+OpenDocument="main.c", FilePath="C:/Users/qwz66/Desktop/cmake_sodier - v4.1/newrcG7.0/Core/Src/main.c", Line=58
+OpenDocument="tasks.c", FilePath="C:/Users/qwz66/Desktop/cmake_sodier - v4.1/newrcG7.0/Middlewares/Third_Party/FreeRTOS/Source/tasks.c", Line=3634
+OpenDocument="dm4340_ctrl.c", FilePath="C:/Users/qwz66/Desktop/cmake_sodier - v4.1/newrcG7.0/Hardware/dm4340_ctrl.c", Line=0
+OpenDocument="new_rc.c", FilePath="C:/Users/qwz66/Desktop/cmake_sodier - v4.1/newrcG7.0/Hardware/new_rc.c", Line=22
+OpenDocument="motor.c", FilePath="C:/Users/qwz66/Desktop/cmake_sodier - v4.1/newrcG7.0/Hardware/motor.c", Line=407
+OpenDocument="stm32f4xx_hal_can.c", FilePath="C:/Users/qwz66/Desktop/cmake_sodier - v4.1/newrcG7.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c", Line=1224
+OpenDocument="stm32f4xx_hal_spi.c", FilePath="C:/Users/qwz66/Desktop/cmake_sodier - v4.1/newrcG7.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c", Line=1299
+OpenDocument="stm32f4xx_hal.c", FilePath="C:/Users/qwz66/Desktop/cmake_sodier - v4.1/newrcG7.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c", Line=310
+OpenDocument="startup_stm32f407xx.s", FilePath="C:/Users/qwz66/Desktop/cmake_sodier - v4.1/newrcG7.0/startup_stm32f407xx.s", Line=45
+OpenDocument="dm4340_drv.h", FilePath="C:/Users/qwz66/Desktop/cmake_sodier - v4.1/newrcG7.0/Hardware/dm4340_drv.h", Line=0
+OpenToolbar="Debug", Floating=0, x=0, y=0
+OpenWindow="Source Files", DockArea=LEFT, x=0, y=0, w=259, h=1165, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Memory 1", DockArea=BOTTOM, x=2, y=0, w=1014, h=328, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0, EditorAddress=0x8010F30
+OpenWindow="Watched Data 1", DockArea=LEFT, x=1, y=0, w=278, h=1165, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Data Sampling", DockArea=BOTTOM, x=0, y=0, w=545, h=328, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0, VisibleTab=0, UniformSampleSpacing=0
+OpenWindow="Console", DockArea=BOTTOM, x=1, y=0, w=999, h=328, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+SmartViewPlugin="", Page="", Toolbar="Hidden", Window="SmartView 1"
+TableHeader="Source Files", SortCol="File", SortOrder="ASCENDING", VisibleCols=["File";"Status";"Size";"#Insts";"Path"], ColWidths=[271;100;100;100;1030]
+TableHeader="Data Sampling Table", SortCol="None", SortOrder="ASCENDING", VisibleCols=["Index";"Time";" 55 359";" ((All_control).gimbal).yaw_target";" ((vision_recieve_union).receive_vision).yaw";" ((vision_recieve_union).receive_vision).mode"], ColWidths=[100;100;100;100;100;100]
+TableHeader="Data Sampling Setup", SortCol="Expression", SortOrder="ASCENDING", VisibleCols=["Expression";"Type";"Value";"Min";"Max";"Average";"# Changes";"Min. Change";"Max. Change"], ColWidths=[118;194;144;144;144;144;110;154;144]
+TableHeader="Power Sampling", SortCol="None", SortOrder="ASCENDING", VisibleCols=["Index";"Time";"Ch 0"], ColWidths=[100;100;100]
+TableHeader="Task List", SortCol="None", SortOrder="ASCENDING", VisibleCols=["Name";"Run Count";"Priority";"Status";"Timeout";"Stack Info";"ID";"Mutex Count";"Notified Value";"Notify State"], ColWidths=[110;110;110;110;110;110;110;110;110;110]
+TableHeader="Watched Data 1", SortCol="Expression", SortOrder="ASCENDING", VisibleCols=["Expression";"Value";"Location";"Refresh"], ColWidths=[100;100;100;100]
+TableHeader="RegisterSelectionDialog", SortCol="None", SortOrder="ASCENDING", VisibleCols=[], ColWidths=[]
+TableHeader="TargetExceptionDialog", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Value";"Address";"Description"], ColWidths=[200;100;100;340]
+WatchedExpression="VT13_USE", RefreshRate=5, Window=Watched Data 1
+WatchedExpression="rc", RefreshRate=5, Window=Watched Data 1
+WatchedExpression="imu_angle", RefreshRate=5, Window=Watched Data 1
+WatchedExpression="Gyro_Offset", RefreshRate=5, Window=Watched Data 1
+WatchedExpression="OFFSET_Buffer", RefreshRate=5, Window=Watched Data 1
+WatchedExpression="gyro_cali_offset", RefreshRate=5, Window=Watched Data 1
+WatchedExpression="gyro_offset_value", Window=Watched Data 1
+WatchedExpression="GYRO_OFFSET_KP", RefreshRate=5, Window=Watched Data 1
+WatchedExpression="offset_OK_flag", RefreshRate=5, Window=Watched Data 1
+WatchedExpression="accel_cali_offset", RefreshRate=5, Window=Watched Data 1
+WatchedExpression="gyro_cali_debug_result", RefreshRate=5, Window=Watched Data 1
+WatchedExpression="gyro_cali_offset", RefreshRate=5, Window=Watched Data 1
+WatchedExpression="gyro_cali_offset", RefreshRate=5, Window=Watched Data 1
+WatchedExpression="local_cali_t", RefreshRate=5, Window=Watched Data 1
+WatchedExpression="accel_cali_debug_result", RefreshRate=5, Window=Watched Data 1
+WatchedExpression="gyro_cali_debug_result", RefreshRate=5, Window=Watched Data 1
+WatchedExpression="INS_accel", RefreshRate=5, Window=Watched Data 1
+WatchedExpression="motor", RefreshRate=5, Window=Watched Data 1
+WatchedExpression="Pitch", RefreshRate=5, Window=Watched Data 1
+WatchedExpression="SHOOT_R", RefreshRate=5, Window=Watched Data 1
+WatchedExpression="All_control", RefreshRate=5, Window=Watched Data 1
+WatchedExpression="gyro_cali_offset", RefreshRate=5, Window=Watched Data 1
+WatchedExpression="bmi088_real_data", RefreshRate=5, Window=Watched Data 1
+WatchedExpression="vision_recieve_union", RefreshRate=5, Window=Watched Data 1
+WatchedExpression="VT13_USE", RefreshRate=5, Window=Watched Data 1
+WatchedExpression="yaw_ff", RefreshRate=5, Window=Watched Data 1
